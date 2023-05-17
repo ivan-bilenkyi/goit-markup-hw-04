@@ -167,7 +167,13 @@ button {
 
 /* =================== Hero =================== */
 .hero {
-  background-color: #2e2f42;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url('../images/hero/hero-bg.jpg');
+  background-size: cover;
+  background-color: #464766;
   padding-top: 188px;
   padding-bottom: 188px;
 }
@@ -215,6 +221,16 @@ button {
 .feature-item {
   flex-basis: calc((100% -72px) / 4);
 }
+.icon-svg {
+  background-color: #f4f4fd;
+  padding: 24px 100px;
+  margin-bottom: 8px;
+  border-radius: 4px;
+}
+/* .feature-icon {
+  display: block;
+
+} */
 
 /* =================== /Feature =================== */
 
