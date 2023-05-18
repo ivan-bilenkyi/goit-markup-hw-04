@@ -268,8 +268,28 @@ button {
   text-align: center;
   padding: 32px 16px;
 }
-.team-name {
+.team-name,
+.team-text {
   margin-bottom: 8px;
+}
+
+.social-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #4d5ae5;
+}
+
+.social-icon {
+  fill: #f4f4fd;
 }
 /* =================== /Team =================== */
 
