@@ -284,8 +284,7 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 40px;
-  height: 40px;
+  padding: 12px;
   border-radius: 50%;
   background-color: #4d5ae5;
 }
@@ -293,6 +292,14 @@ button {
 .social-icon {
   fill: #f4f4fd;
 }
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--active-link);
+}
+/* .social-link:hover .social-icon,
+.social-link:focus .social-icon {
+  fill: var(--active-link);
+} */
 /* =================== /Team =================== */
 
 /* =================== Customers =================== */
@@ -305,12 +312,23 @@ button {
   gap: var(--margin-gap);
 }
 .customer-item {
+}
+.customer-link {
+  display: flex;
   border: 1px solid #8e8f99;
   border-radius: 4px;
   padding: 16px 32px;
 }
 .customer-icon {
   fill: #8e8f99;
+}
+.customer-link:hover,
+.customer-link:focus {
+  border-color: var(--active-link);
+}
+.customer-link:hover .customer-icon,
+.customer-link:focus .customer-icon {
+  fill: var(--active-link);
 }
 /* =================== /Customers =================== */
 
@@ -379,6 +397,14 @@ button {
   padding-top: 100px;
   padding-bottom: 100px;
 }
+.footer .container {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.footer1 {
+  margin-right: 120px;
+}
 .footer-logo {
   display: inline-block;
   margin-bottom: 16px;
@@ -390,5 +416,16 @@ button {
 .footer-text {
   max-width: 264px;
   color: #f4f4fd;
+}
+.footer-h2 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+.footer .social-list {
+  gap: 16px;
 }
 /* =================== /Footer =================== */
