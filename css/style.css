@@ -219,7 +219,7 @@ button {
   gap: var(--margin-gap);
 }
 .feature-item {
-  flex-basis: calc((100% -72px) / 4);
+  flex-basis: calc((100% - 72px) / 4);
 }
 .icon-svg {
   background-color: #f4f4fd;
@@ -243,7 +243,7 @@ button {
   gap: var(--margin-gap);
 }
 .work-item {
-  flex-basis: calc((100% -48px) / 3);
+  flex-basis: calc((100% - 48px) / 3);
 }
 
 /* =================== /Our Works =================== */
@@ -259,8 +259,10 @@ button {
   gap: var(--margin-gap);
 }
 .team-item {
-  flex-basis: calc((100% -72px) / 4);
+  flex-basis: calc((100% - 72px) / 4);
   background-color: #fff;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
 }
 
@@ -276,7 +278,7 @@ button {
 .social-list {
   display: flex;
   justify-content: center;
-  gap: 24px;
+  gap: var(--margin-gap);
 }
 .social-link {
   display: flex;
@@ -292,6 +294,25 @@ button {
   fill: #f4f4fd;
 }
 /* =================== /Team =================== */
+
+/* =================== Customers =================== */
+.customers {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.customer-list {
+  display: flex;
+  gap: var(--margin-gap);
+}
+.customer-item {
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  padding: 16px 32px;
+}
+.customer-icon {
+  fill: #8e8f99;
+}
+/* =================== /Customers =================== */
 
 /* =================== Portfolio =================== */
 .card-section {
@@ -322,20 +343,30 @@ button {
   color: #fff;
   background-color: var(--active-bg-btn);
   border: 1px solid transparent;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .cards-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 48px var(--margin-gap);
+  gap: var(--margin-gap);
 }
 .card-item {
-  max-width: 360px;
-  flex-basis: calc((100% -48px) / 3);
+  flex-basis: calc((100% - 48px) / 3);
+}
+.card-item:hover,
+.card-item:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .card-content {
   padding: 32px 16px;
   border: 1px solid var(--border-color);
   border-top: none;
+}
+.card-content:hover,
+.card-content:focus {
+  border: 1px solid #f4f4fd;
 }
 .card-title {
   margin-bottom: 8px;
